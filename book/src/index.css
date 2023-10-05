@@ -1,0 +1,515 @@
+@font-face {
+  font-family: "Futura Bk";
+  src: url("../public//Futura\ Bk\ Book.ttf") format("truetype");
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #2d2e32;
+  overflow: hidden;
+  cursor: default;
+  font-family: "Futura Bk";
+  letter-spacing: 1px;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes from1to2colour {
+  from {
+    background: #fcfcfc;
+  }
+  to {
+    background: #2c384d;
+  }
+}
+.from1to2colour {
+  animation: from1to2colour 1s ease-in-out;
+}
+@keyframes from2to1colour {
+  from {
+    background: #2c384d;
+  }
+  to {
+    background: #fcfcfc;
+  }
+}
+.from2to1colour {
+  animation: from2to1colour 1s ease-in-out;
+}
+@keyframes from2to3colour {
+  from {
+    background: #2c384d;
+  }
+  to {
+    background: #daa287;
+  }
+}
+.from2to3colour {
+  animation: from2to3colour 1s ease-in-out;
+}
+@keyframes from3to2colour {
+  from {
+    background: #daa287;
+  }
+  to {
+    background: #2c384d;
+  }
+}
+.from3to2colour {
+  animation: from3to2colour 1s ease-in-out;
+}
+@keyframes from3to4colour {
+  from {
+    background: #daa287;
+  }
+  to {
+    background: #a79a89;
+  }
+}
+.from3to4colour {
+  animation: from3to4colour 1s ease-in-out;
+}
+@keyframes from4to3colour {
+  from {
+    background: #a79a89;
+  }
+  to {
+    background: #daa287;
+  }
+}
+.from4to3colour {
+  animation: from4to3colour 1s ease-in-out;
+}
+@keyframes from4to5colour {
+  from {
+    background: #a79a89;
+  }
+  to {
+    background: #bbbbbb;
+  }
+}
+.from4to5colour {
+  animation: from4to5colour 1s ease-in-out;
+}
+@keyframes from5to4colour {
+  from {
+    background: #bbbbbb;
+  }
+  to {
+    background: #a79a89;
+  }
+}
+.from5to4colour {
+  animation: from5to4colour 1s ease-in-out;
+}
+@keyframes from5to6colour {
+  from {
+    background: #bbbbbb;
+  }
+  to {
+    background: #757180;
+  }
+}
+.from5to6colour {
+  animation: from5to6colour 1s ease-in-out;
+}
+@keyframes from6to5colour {
+  from {
+    background: #757180;
+  }
+  to {
+    background: #bbbbbb;
+  }
+}
+.from6to5colour {
+  animation: from6to5colour 1s ease-in-out;
+}
+@keyframes from6to7colour {
+  from {
+    background: #757180;
+  }
+  to {
+    background: #cd2e30;
+  }
+}
+.from6to7colour {
+  animation: from6to7colour 1s ease-in-out;
+}
+@keyframes from7to6colour {
+  from {
+    background: #cd2e30;
+  }
+  to {
+    background: #757180;
+  }
+}
+.from7to6colour {
+  animation: from7to6colour 1s ease-in-out;
+}
+@keyframes from7to8colour {
+  from {
+    background: #cd2e30;
+  }
+  to {
+    background: #050505;
+  }
+}
+.from7to8colour {
+  animation: from7to8colour 1s ease-in-out;
+}
+@keyframes from8to7colour {
+  from {
+    background: #050505;
+  }
+  to {
+    background: #cd2e30;
+  }
+}
+.from8to7colour {
+  animation: from8to7colour 1s ease-in-out;
+}
+@keyframes from8to9colour {
+  from {
+    background: #050505;
+  }
+  to {
+    background: #c3cadb;
+  }
+}
+.from8to9colour {
+  animation: from8to9colour 1s ease-in-out;
+}
+@keyframes from9to8colour {
+  from {
+    background: #c3cadb;
+  }
+  to {
+    background: #050505;
+  }
+}
+.from9to8colour {
+  animation: from9to8colour 1s ease-in-out;
+}
+@keyframes from9to1colour {
+  from {
+    background: #c3cadb;
+  }
+  to {
+    background: #fcfcfc;
+  }
+}
+.from9to1colour {
+  animation: from9to1colour 1s ease-in-out;
+}
+@keyframes from1to9colour {
+  from {
+    background: #fcfcfc;
+  }
+  to {
+    background: #c3cadb;
+  }
+}
+.from1to9colour {
+  animation: from1to9colour 1s ease-in-out;
+}
+@keyframes from1to2 {
+  from {
+    top: -3%;
+    left: -10%;
+    width: 30vw;
+  }
+  to {
+    top: -16%;
+    left: 9%;
+    width: 26vw;
+  }
+}
+.from1to2 {
+  animation: from1to2 1s ease-in-out;
+}
+@keyframes from2to3 {
+  from {
+    top: -16%;
+    left: 9%;
+    width: 26vw;
+  }
+  to {
+    top: -15%;
+    left: 30%;
+    width: 16vw;
+  }
+}
+.from2to3 {
+  animation: from2to3 1s ease-in-out;
+}
+@keyframes from3to4 {
+  from {
+    top: -15%;
+    left: 30%;
+    width: 16vw;
+  }
+  to {
+    top: -15%;
+    left: 40%;
+    width: 16vw;
+  }
+}
+.from3to4 {
+  animation: from3to4 1s ease-in-out;
+}
+@keyframes from4to5 {
+  from {
+    top: -15%;
+    left: 40%;
+    width: 16vw;
+  }
+  to {
+    top: -16%;
+    left: 43%;
+    width: 26vw;
+  }
+}
+.from4to5 {
+  animation: from4to5 1s ease-in-out;
+}
+@keyframes from5to6 {
+  from {
+    top: -16%;
+    left: 43%;
+    width: 26vw;
+  }
+  to {
+    top: -6%;
+    left: 53%;
+    width: 30vw;
+  }
+}
+.from5to6 {
+  animation: from5to6 1s ease-in-out;
+}
+@keyframes from6to7 {
+  from {
+    top: -6%;
+    left: 53%;
+    width: 30vw;
+  }
+  to {
+    top: 17%;
+    left: 39%;
+    width: 40vw;
+  }
+}
+.from6to7 {
+  animation: from6to7 1s ease-in-out;
+}
+@keyframes from7to8 {
+  from {
+    top: 17%;
+    left: 39%;
+    width: 40vw;
+  }
+  to {
+    top: -24%;
+    left: -23%;
+    width: 80vw;
+  }
+}
+.from7to8 {
+  animation: from7to8 1s ease-in-out;
+}
+@keyframes from8to9 {
+  from {
+    top: -24%;
+    left: -23%;
+    width: 80vw;
+  }
+  to {
+    top: 17%;
+    left: -13%;
+    width: 40vw;
+  }
+}
+.from8to9 {
+  animation: from8to9 1s ease-in-out;
+}
+@keyframes from9to1 {
+  from {
+    top: 17%;
+    left: -13%;
+    width: 40vw;
+  }
+  to {
+    top: -3%;
+    left: -10%;
+    width: 30vw;
+  }
+}
+.from9to1 {
+  animation: from9to1 1s ease-in-out;
+}
+
+@keyframes from2to1 {
+  from {
+    top: -16%;
+    left: 9%;
+    width: 26vw;
+  }
+  to {
+    top: -3%;
+    left: -10%;
+    width: 30vw;
+  }
+}
+.from2to1 {
+  animation: from2to1 1s ease-in-out;
+}
+@keyframes from3to2 {
+  from {
+    top: -15%;
+    left: 30%;
+    width: 16vw;
+  }
+  to {
+    top: -16%;
+    left: 9%;
+    width: 26vw;
+  }
+}
+.from3to2 {
+  animation: from3to2 1s ease-in-out;
+}
+@keyframes from4to3 {
+  from {
+    top: -15%;
+    left: 40%;
+    width: 16vw;
+  }
+  to {
+    top: -15%;
+    left: 30%;
+    width: 16vw;
+  }
+}
+.from4to3 {
+  animation: from4to3 1s ease-in-out;
+}
+@keyframes from5to4 {
+  from {
+    top: -16%;
+    left: 43%;
+    width: 26vw;
+  }
+  to {
+    top: -15%;
+    left: 40%;
+    width: 16vw;
+  }
+}
+.from5to4 {
+  animation: from5to4 1s ease-in-out;
+}
+@keyframes from6to5 {
+  from {
+    top: -6%;
+    left: 53%;
+    width: 30vw;
+  }
+  to {
+    top: -16%;
+    left: 43%;
+    width: 26vw;
+  }
+}
+.from6to5 {
+  animation: from6to5 1s ease-in-out;
+}
+@keyframes from7to6 {
+  from {
+    top: 17%;
+    left: 39%;
+    width: 40vw;
+  }
+  to {
+    top: -6%;
+    left: 53%;
+    width: 30vw;
+  }
+}
+.from7to6 {
+  animation: from7to6 1s ease-in-out;
+}
+@keyframes from8to7 {
+  from {
+    top: -24%;
+    left: -23%;
+    width: 80vw;
+  }
+  to {
+    top: 17%;
+    left: 39%;
+    width: 40vw;
+  }
+}
+.from8to7 {
+  animation: from8to7 1s ease-in-out;
+}
+@keyframes from9to8 {
+  from {
+    top: 17%;
+    left: -13%;
+    width: 40vw;
+  }
+  to {
+    top: -24%;
+    left: -23%;
+    width: 80vw;
+  }
+}
+.from9to8 {
+  animation: from9to8 1s ease-in-out;
+}
+@keyframes from1to9 {
+  from {
+    top: -3%;
+    left: -10%;
+    width: 30vw;
+  }
+  to {
+    top: 17%;
+    left: -13%;
+    width: 40vw;
+  }
+}
+.from1to9 {
+  animation: from1to9 1s ease-in-out;
+}

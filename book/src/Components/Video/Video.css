@@ -1,0 +1,45 @@
+.video-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.video-div img {
+  width: 100%;
+  height: 100%;
+}
+
+.pre-book-video-btn:hover {
+  transition: all 0.1s;
+  background: black;
+}
+.pre-book-video-btn {
+  color: white;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.6vw 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.linkssssss a {
+  margin-left: 1rem;
+  color: #2d2e32;
+}
+.linkssssss {
+  font-size: 0.8rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 2%;
+  z-index: 1000;
+  display: flex;
+}

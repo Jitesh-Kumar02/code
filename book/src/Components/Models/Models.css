@@ -1,0 +1,181 @@
+:root {
+  --variant_selector_height: -50vh;
+  --bar_selector_height: -50vh;
+  --buy_modal_height: -50vh;
+  --spinner_width: 60vw;
+  --gap_between_selectors: 1.5vw;
+  --gap_between_bar_selector: 1.5vw;
+  --gap_between_bar_vehicle: 1.5vw;
+  --height_header: 0.1vw;
+  --margin_top_header: 1vw;
+
+  --variant_selectors_1_width: 33%;
+  --variant_selectors_2_width: 33%;
+  --model_selector_flex_direction: row;
+  --inner_model_selector_width: 33%;
+  --selector_heading_font_size: 1.2rem;
+  --selector_heading_margin_bottom: 2%;
+  --selector_content_font_size: 1rem;
+
+  --input_padding: 1vw 1vw;
+  --input_font_size: 1rem;
+  --input_outer_div_width: 33%;
+  --input_margin_left: 0%;
+  --input_width: 90%;
+  --buy_modal_flex_direction: row;
+  --booking_details_div_width: 33%;
+  --booking_content_width: 70%;
+  --booking_content_margin_top: 0vh;
+  --lower_box_padding_bottom: 0px;
+  --city_selector_max_height: 120% !important;
+  --state_selector_max_height: 200%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 10%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.header {
+  margin-top: var(--margin_top_header);
+  height: var(--height_header);
+  background: rgba(253,103,14,255);
+  width: 100%;
+}
+
+.model-btns img {
+  width: calc(1.5 * calc(var(--margin_top_header) + var(--height_header)));
+  cursor: pointer;
+}
+.model-btns {
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding-right: 2vw;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  width: 10vw;
+  height: calc(2 * calc(var(--margin_top_header) + var(--height_header)));
+  top: 0;
+  left: 0;
+}
+
+.variant_selectors {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  bottom: calc(var(--buy_modal_height) + var(--gap_between_selectors));
+  box-sizing: border-box;
+  padding: 0 10%;
+  display: flex;
+  font-size: 0.8rem;
+}
+
+.variant_selectors_1 {
+  width: var(--variant_selectors_1_width);
+}
+.variant_selectors_2 {
+  width: var(--variant_selectors_2_width);
+}
+
+.variant_selectors_1,
+.variant_selectors_2 {
+  display: flex;
+}
+
+.inner_variant_selectors_1,
+.inner_variant_selectors_2 {
+  display: flex;
+  padding: 0.2vw 0vw;
+  background-color: rgba(253, 103, 14, 255);
+  color: white;
+}
+
+.inner_variant_selector {
+  padding: 0.4vw 1vw;
+  margin: 0 0.3vw;
+}
+
+.variant_selected {
+  background-color: white;
+  color: black;
+}
+.variant_not_selected {
+  cursor: pointer;
+}
+
+.model-selectors {
+  width: 100vw;
+  display: flex;
+  flex-direction: var(--model_selector_flex_direction);
+  box-sizing: border-box;
+  padding: 0 10%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 0.9rem;
+  padding-bottom: calc(7vh + var(--lower_box_padding_bottom));
+  color: white;
+  background-color: rgba(253, 103, 14, 255);
+  padding-top: 2vh;
+}
+
+.inner_model_selector {
+  display: flex;
+  flex-direction: column;
+  width: var(--inner_model_selector_width);
+}
+
+.selector_heading {
+  width: 100%;
+  font-size: var(--selector_heading_font_size);
+  margin-top: 5%;
+  margin-bottom: var(--selector_heading_margin_bottom);
+}
+
+.selector_content_2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: var(--selector_content_font_size);
+}
+.selector_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: var(--selector_content_font_size);
+  width: 100%;
+}
+.selector_content_row {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 100px) and (max-width: 1000px) and (min-height: 1000px) and (max-height: 1200px) {
+  .inner_variant_selector {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 1000px) and (min-height: 1200px) and (max-height: 1400px) {
+  .inner_variant_selector {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 700px) {
+  .inner_variant_selector {
+    font-size: 0.6rem;
+  }
+  :root {
+    --height_header: 0.7vh;
+    --margin_top_header: 2vh;
+  }
+}
